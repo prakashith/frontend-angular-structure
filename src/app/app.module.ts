@@ -14,6 +14,8 @@ import { jwtConfig, SharedModule } from './shared/shared.module';
 import { LoaderComponent } from './shared/components/loader/loader.component';
 import { AppInterceptorService } from './shared/services/app-interceptor.service';
 import { CommonApiService } from './shared/services/common-api.service';
+import { DashboardComponent } from './main/dashboard/dashboard.component';
+
 
 
 
@@ -26,7 +28,8 @@ export const httpInterceptorProvider = [
 @NgModule({
   declarations: [
     AppComponent,
-    LoaderComponent
+    LoaderComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
