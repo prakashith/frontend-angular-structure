@@ -17,6 +17,23 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Documentation
 
 Run `npm run compodoc:build-and-serve` to see the documentation of code. The build artifacts will be stored in the `documentation/` directory.
+## Write funciton with paramater 
+```
+/**
+   * 
+   * @param name Name of user
+   * @param email Email of user
+   * @param mobile Mobile of user
+   */
+  addData(name, email, mobile){
+    let dataToSave = {
+      name:name,
+      email:email,
+      mobile:mobile
+    }
+    this.mainService.adduser(dataToSave)
+  }
+```
 
 ## Running unit tests
 
