@@ -17,7 +17,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Documentation
 
 Run `npm run compodoc:build-and-serve` to see the documentation of code. The build artifacts will be stored in the `documentation/` directory.
-## Write funciton with paramater 
+## Write funciton in components
 ```
 /**
    * 
@@ -32,6 +32,17 @@ Run `npm run compodoc:build-and-serve` to see the documentation of code. The bui
       mobile:mobile
     }
     this.mainService.adduser(dataToSave)
+  }
+```
+
+## Write funciton in service file 
+```
+/**
+   * 
+   * @param data data in key value format
+   */
+  adduser(data){
+    this._http.get("localhost:8000/user/v1/add", data)
   }
 ```
 
