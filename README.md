@@ -15,8 +15,13 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Documentation
-
+We are using compodoc for project documentation.
 Run `npm run compodoc:build-and-serve` to see the documentation of code. The build artifacts will be stored in the `documentation/` directory.
+
+```
+npm run compodoc:build-and-serve
+
+```
 ## Write funciton in components
 ```
 /**
