@@ -5,7 +5,13 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 if (environment.production) {
-  enableProdMode();
+	enableProdMode();
+	const scriptEl = window.document.createElement('script');
+	scriptEl.src = 'assets/js/prodConfig.js';
+	window.document.body.appendChild(scriptEl);
+	if (window) {
+	  window.console.log = () => {};
+	}
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
